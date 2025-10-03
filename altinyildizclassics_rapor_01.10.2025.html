@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altınyıldız Classics X Düğün.com Marka İş Birliği Sunumu</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+        :root { --theme-color: #d81b60; }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border-radius: 10px;
+            padding: 30px 40px;
+        }
+        .top-header {
+            display: flex; align-items: center; justify-content: space-between;
+            padding-bottom: 20px; border-bottom: 1px solid #e0e0e0; margin: 20px 0 40px 0;
+        }
+        .top-header .logos { display: flex; align-items: center; }
+        .top-header img.logo1 { height: 50px; }
+	.top-header img.logo2 { height: 90px; }
+        .top-header span { font-size: 1.5em; color: #ccc; margin: 0 15px; }
+        .intro-section { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; margin-bottom: 50px; } /* align-items: center EKLENDİ */
+        .intro-text h1 { font-size: 2.8em; font-weight: 700; margin: 0 0 10px 0; }
+        .intro-text h2 { font-size: 1.5em; font-weight: 600; color: #007bff; margin: 0 0 10px 0; }
+        .intro-text .date { font-size: 1em; color: #888; margin-bottom: 20px; }
+        .intro-text p { font-size: 1.1em; line-height: 1.7; color: #555; }
+        .intro-image { height: 100%}
+        .intro-image img { width: 100%; height: 100%; object-fit: cover; border-radius: 8px; }
+        .section-title {
+            font-size: 2em; color: var(--theme-color); margin-bottom: 25px; text-align: center;
+            font-weight: 700; border-bottom: 3px solid #f06292; display: inline-block; padding-bottom: 5px;
+        }
+        .center-wrapper { text-align: center; margin-bottom: 40px; scroll-margin-top: 80px; }
+        .timeline {
+            position: relative; width: 90%; margin: 60px auto 80px auto;
+        }
+        .timeline-line { position: absolute; left: 0; top: 50%; width: 100%; height: 3px; background: #e0e0e0; transform: translateY(-50%); }
+        .timeline-wrapper { display: flex; justify-content: space-between; position: relative; }
+        .timeline-milestone {
+            position: relative; width: 120px; text-align: center; transition: transform 0.3s ease;
+        }
+        .timeline-milestone:hover { transform: scale(1.05); }
+        .timeline-milestone .content { background: white; padding: 15px 10px; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+        .timeline-milestone .date { font-weight: 700; font-size: 1em; margin-bottom: 8px; }
+        .timeline-milestone .desc { font-size: 0.85em; line-height: 1.4; color: #666; }
+        .timeline-milestone:nth-child(odd) { margin-top: 40px; }
+        .timeline-milestone:nth-child(even) { margin-bottom: 40px; }
+        .timeline-milestone::before { /* Vertical line */
+            content: ''; position: absolute; left: 50%; width: 3px; background: #e0e0e0;
+        }
+        .timeline-milestone::after { /* Circle on main line */
+            content: ''; position: absolute; left: 50%; width: 15px; height: 15px; background: white;
+            border: 4px solid var(--theme-color); border-radius: 50%; transform: translateX(-50%); z-index: 1;
+        }
+        .timeline-milestone:nth-child(odd)::before { height: 40px; bottom: 100%; }
+        .timeline-milestone:nth-child(odd)::after { bottom: -40px; }
+        .timeline-milestone:nth-child(even)::before { height: 40px; top: 100%; }
+        .timeline-milestone:nth-child(even)::after { top: -40px; }
+        .kpi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; text-align: center; margin-bottom: 50px; }
+        .kpi-card { background-color: #f9f9f9; padding: 25px 15px; border-radius: 8px; border: 1px solid #eee; }
+        .kpi-card .kpi-value { font-size: 2.8em; font-weight: 700; color: var(--theme-color); margin: 0; }
+        .kpi-card .kpi-label { font-size: 1.1em; color: #555; margin-top: 5px; }
+        .accordion-list { list-style: none; padding: 0; }
+        .accordion-item {
+            display: flex; justify-content: space-between; align-items: center; padding: 15px 10px 15px 45px;
+            font-size: 1.05em; line-height: 1.5; cursor: pointer; border-bottom: 1px solid #eee;
+            font-weight: 600; transition: background-color 0.3s;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23d81b60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>') no-repeat 10px center;
+        }
+        .accordion-item:hover { background-color: #fdf2f7; }
+        .accordion-item .arrow { width: 24px; height: 24px; transition: transform 0.4s ease; background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>'); }
+        .accordion-item.active .arrow { transform: rotate(180deg); }
+        .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.5s ease-out, padding 0.5s ease-out; padding: 0 20px; background: #fafafa; }
+        .accordion-content img { width: 100%; border-radius: 5px; margin: 15px 0; border: 1px solid #ddd; cursor: pointer; }
+        .card { background-color: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); margin-bottom: 20px; }
+        .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; margin-bottom: 40px; }
+        .social-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-bottom: 40px; }
+        .social-card { background-color: #f9f9f9; border-radius: 8px; padding: 20px; text-align: center; border: 1px solid #eee; }
+        .social-card h4 { font-size: 1.3em; margin: 0 0 8px 0; }
+        .social-card .reach { font-size: 2.2em; font-weight: 700; color: var(--theme-color); margin: 0 0 15px 0; }
+        .social-card .social-link { display: inline-block; padding: 10px 20px; background-color: var(--theme-color); color: #fff; text-decoration: none; border-radius: 5px; font-weight: 600; transition: background-color 0.2s; }
+        .social-card .social-link:hover { background-color: #c2185b; }
+        .fake-player {
+            background-color: #f1f3f4; border-radius: 8px; padding: 15px; display: flex;
+            align-items: center; margin: 15px 0;
+        }
+        .play-button { display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background-color: var(--theme-color); border-radius: 50%; margin-right: 15px; cursor: pointer; }
+        .play-button svg { fill: white; width: 20px; height: 20px; margin-left: 3px; }
+        .player-details { flex-grow: 1; }
+        .player-title { font-weight: 600; font-size: 0.9em; margin: 0 0 5px 0; }
+        .progress-bar { width: 100%; height: 5px; background-color: #c7c7c7; border-radius: 5px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        th, td { text-align: left; padding: 12px; border-bottom: 1px solid #eee; }
+        th { background-color: #f7f7f7; font-weight: 600; }
+        tr:hover { background-color: #fdf2f7; }
+        tr.total-row td { font-size: 1.4em; font-weight: 700; color: #28a745; }
+        .budget-bar { background-color: #e0e0e0; border-radius: 5px; overflow: hidden; height: 25px; margin: 10px 0; }
+        .budget-bar-fill { height: 100%; background-color: #4CAF50; width: 92.2%; border-radius: 5px; text-align: center; color: white; line-height: 25px; font-weight: 600; }
+        .budget-details { display: flex; justify-content: space-between; font-weight: 600; }
+        /* --- Teklif Section --- */
+        .teklif-section { text-align: center; padding: 20px; }
+        .teklif-section a { display: inline-block; text-decoration: none; }
+        .teklif-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        .teklif-section img:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+        }
+        .footer { text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #e0e0e0; font-size: 0.9em; color: #888; }
+        .lightbox { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.85); justify-content: center; align-items: center; }
+        .lightbox-content { max-width: 90%; max-height: 85%; }
+        .lightbox-close { position: absolute; top: 25px; right: 35px; color: #fff; font-size: 40px; font-weight: bold; cursor: pointer; transition: 0.3s; }
+        .lightbox-close:hover { color: #bbb; }
+       
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+        <div class="top-header">
+            <div class="logos">
+                <img src="https://dugun.com/assets/images/logo/dugun.svg" alt="Düğün.com Logo" class="logo1">
+                <span>X</span>
+                <img src="https://github.com/nesibekeles/dugun.com/blob/main/alt%C4%B1ny%C4%B1ld%C4%B1z%20logo.png?raw=true" alt="Altınyıldız Classics Logo" class="logo2">
+            </div>
+        </div>
+
+        <section class="intro-section">
+            <div class="intro-text">
+                <h1>Marka İş Birliği Sunumu</h1>
+                <h2>Düğün.com & Altınyıldız Classics</h2>
+                <p class="date">1.10.2025</p>
+                <p>Düğün.com çiftlerine özel, Altınyıldız Classics mağazalarında yapılacak smokin alışverişleri için indirim kampanyası hayata geçirildi. Bu iş birliği ile çiftlerin düğün hazırlıklarındaki en önemli ihtiyaçlarından biri olan damatlık alışverişlerinde ayrıcalık sunmak ve Altınyıldız Classics markasının bilinirliğini artırmak hedeflendi.</p>
+            </div>
+            <div class="intro-image">
+                <img src="https://github.com/nesibekeles/dugun.com/blob/main/alt%C4%B1ny%C4%B1ld%C4%B1z_rapor.png?raw=true" alt="Altınyıldız Classics Model">
+            </div>
+        </section>
+
+        <div class="center-wrapper" id="zaman-cizelgesi"><h2 class="section-title">Proje Zaman Çizelgesi</h2></div>
+        <div class="timeline">
+            <div class="timeline-line"></div>
+            <div class="timeline-wrapper">
+                <div class="timeline-milestone"><div class="content"><div class="date">1 Tem</div><div class="desc">Wedding Planner Çağrıları Başladı</div></div></div>
+                <div class="timeline-milestone"><div class="content"><div class="date">9 Tem</div><div class="desc">Damatlık Kategorisi Canlıya Alındı</div></div></div>
+                <div class="timeline-milestone"><div class="content"><div class="date">18 Tem</div><div class="desc">Dijital Reklamlar Başladı</div></div></div>
+                <div class="timeline-milestone"><div class="content"><div class="date">1 Ağu</div><div class="desc">Hedef Kitleye Mail+SMS Gönderimi Başladı</div></div></div>
+                <div class="timeline-milestone"><div class="content"><div class="date">15 Ağu</div><div class="desc">İndirim Oranı %15'e Çıktı</div></div></div>
+                <div class="timeline-milestone"><div class="content"><div class="date">20 Ağu</div><div class="desc">Banner Ana Sayfada Gösterime Girdi</div></div></div>
+                <div class="timeline-milestone"><div class="content"><div class="date">13 Eyl</div><div class="desc">Influencer Çekimi Yapıldı</div></div></div>
+                <div class="timeline-milestone"><div class="content"><div class="date">30 Eyl</div><div class="desc">Kampanya Son Günü</div></div></div>
+            </div>
+        </div>
+
+        <div class="center-wrapper" id="one-cikan-sonuclar"><h2 class="section-title">Öne Çıkan Sonuçlar</h2></div>
+        <div class="kpi-grid">
+            <div class="kpi-card"><p class="kpi-value">140.556</p><p class="kpi-label">İletilen İndirim Kodu</p></div>
+            <div class="kpi-card"><p class="kpi-value">4.3 M+</p><p class="kpi-label">Reklam Gösterimi</p></div>
+            <div class="kpi-card"><p class="kpi-value">95</p><p class="kpi-label">Adet Satış</p></div>
+        </div>
+
+        <div class="center-wrapper" id="tanitim-stratejisi"><h2 class="section-title">Çok Kanallı Tanıtım Stratejisi</h2></div>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Sitede Yapılan Geliştirmeler</h3>
+                <ul class="accordion-list">
+                    <li class="accordion-item"><span>Ana sayfa ve footer'da banner gösterimi</span><div class="arrow"></div></li>
+                    <div class="accordion-content"><img src="https://github.com/nesibekeles/dugun.com/blob/main/Ana%20Sayfa%20Banner.jpg?raw=true" alt="Ana Sayfa Banner" class="popup-img"></div>
+                    <li class="accordion-item"><span>Damatlık kategorisinin Altınyıldız'a özel hale getirilmesi</span><div class="arrow"></div></li>
+                    <div class="accordion-content"><img src="https://github.com/nesibekeles/dugun.com/blob/main/Altinyildiz%20-%20Header%20Menu%20Logo%201.png?raw=true" alt="Header Menu Logo" class="popup-img"></div>
+                    <li class="accordion-item"><span>Gelinlik Modelleri sayfasında Altınyıldız bannerı</span><div class="arrow"></div></li>
+                    <div class="accordion-content"><img src="https://github.com/nesibekeles/dugun.com/blob/main/gelinlik%20modelleri.png?raw=true" alt="Gelinlik Modelleri Banner" class="popup-img"></div>
+                    <li class="accordion-item"><span>Ürünlerde %15 indirim badge'i kullanımı</span><div class="arrow"></div></li>
+                    <div class="accordion-content"><img src="https://github.com/nesibekeles/dugun.com/blob/main/damatlik%20%C3%BCr%C3%BCn.jpg?raw=true" alt="İndirim Badge'i" class="popup-img"></div>
+                    <li class="accordion-item"><span>Altınyıldız'a özel firma sayfası tasarımı</span><div class="arrow"></div></li>
+                    <div class="accordion-content"><img src="https://github.com/nesibekeles/dugun.com/blob/main/provider%20page.png?raw=true" alt="Özel Firma Sayfası" class="popup-img"></div>
+                    <li class="accordion-item"><span>11 popüler damatlık makalesinin güncellenmesi</span><div class="arrow"></div></li>
+                    <div class="accordion-content"><img src="https://github.com/nesibekeles/dugun.com/blob/main/Makale.png?raw=true" alt="Makale Güncellemesi" class="popup-img"></div>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>İletişim ve Pazarlama Faaliyetleri</h3>
+                <ul class="accordion-list">
+                   <li class="accordion-item"><span>63.843 çifte kampanya mail/SMS duyurusu</span><div class="arrow"></div></li>
+                   <div class="accordion-content"><img src="https://github.com/nesibekeles/dugun.com/blob/main/Alt%C4%B1ny%C4%B1ld%C4%B1z%20Kampanya%20Duyuru_22%20Temmuz%202025.png?raw=true" alt="Duyuru Maili" class="popup-img"></div>
+                   <li class="accordion-item"><span>"Welcome" mail serisine kampanya eklenmesi</span><div class="arrow"></div></li>
+                   <div class="accordion-content"><img src="https://github.com/nesibekeles/dugun.com/blob/main/welcome%20serisi%20mailleri.png?raw=true" alt="Welcome Mail" class="popup-img"></div>
+                   <li class="accordion-item"><span>Haftalık 126.140 indirim kodu gönderimi</span><div class="arrow"></div></li>
+                   <div class="accordion-content"><img src="https://github.com/nesibekeles/dugun.com/blob/main/SMS2.png?raw=true" alt="SMS Örneği" class="popup-img"></div>
+                   <li class="accordion-item"><span>Wedding Planner çağrılarında kampanya duyurusu (13.892)</span><div class="arrow"></div></li>
+                   <div class="accordion-content">
+                       <div class="fake-player">
+                           <a href="https://github.com/nesibekeles/dugun.com/raw/refs/heads/main/Wedding%20Planner_Alt%C4%B1ny%C4%B1ld%C4%B1z%20%C3%87a%C4%9Fr%C4%B1%20Kayd%C4%B1.mp4" download class="play-button"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg></a>
+                           <div class="player-details"><p class="player-title">Örnek Çağrı Kaydı.mp4</p><div class="progress-bar"></div></div>
+                       </div>
+                   </div>
+                   <li class="accordion-item"><span>Sosyal medya ve influencer çalışmaları</span><div class="arrow"></div></li>
+                   <div class="accordion-content"><p style="padding: 15px 0;">Detaylar "Sosyal Medya Etkileşimi" bölümünde yer almaktadır.</p></div>
+                   <li class="accordion-item"><span>Meta ve Google dijital reklam kampanyaları</span><div class="arrow"></div></li>
+                   <div class="accordion-content"><p style="padding: 15px 0;">Detaylar "Performans Detayları" bölümünde yer almaktadır.</p></div>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="center-wrapper" id="sosyal-medya"><h2 class="section-title">Sosyal Medya Etkileşimi</h2></div>
+         <div class="social-grid">
+            <div class="social-card"><h4>6 Story Serisi</h4><p class="reach">15.871</p><a href="https://drive.google.com/drive/folders/1_CWqqcDWDL9GfGoY2ZMDp9SRDnm3_ewH?usp=drive_link" target="_blank" class="social-link">Örnekleri Gör</a></div>
+            <div class="social-card"><h4>3 Reels Paylaşımı</h4><p class="reach">40.135</p><a href="https://www.instagram.com/reel/DOOtes3CsRT/" target="_blank" class="social-link">Videoları İzle</a></div>
+            <div class="social-card"><h4>1 Influencer Çekimi</h4><p class="reach">45.050</p><a href="https://www.instagram.com/reel/DOiV63vjWLo/?utm_source=ig_web_copy_link" target="_blank" class="social-link">Post'u Görüntüle</a></div>
+        </div>
+
+        <div class="center-wrapper" id="performans-detaylari"><h2 class="section-title">Performans Detayları</h2></div>
+        <div class="grid-container">
+            <div class="card">
+                <h3>İletilen Kod Dağılımı</h3>
+                <table><thead><tr><th>Kanal</th><th>İletilen Kod Sayısı</th></tr></thead><tbody><tr><td>Mailing</td><td>126.140</td></tr><tr><td>Site</td><td>524</td></tr><tr><td>Wedding Planner</td><td>13.892</td></tr><tr class="total-row"><td>Toplam</td><td>140.556</td></tr></tbody></table>
+            </div>
+            <div class="card">
+                 <h3>Dijital Reklam Bütçesi</h3>
+                 <div class="budget-details"><span>Harcanan: ₺230.494,64</span><span>Toplam: ₺250.000,00</span></div>
+                 <div class="budget-bar"><div class="budget-bar-fill">92.2%</div></div>
+                 <table><thead><tr><th>Kampanya</th><th>Maliyet</th><th>Gösterim</th><th>Tıklama</th></tr></thead><tbody><tr><td>Meta - %10 İndirim</td><td>₺38.176,07</td><td>977.958</td><td>23.632</td></tr><tr><td>Meta - %15 İndirim</td><td>₺74.777,12</td><td>2.619.592</td><td>26.855</td></tr><tr><td>Meta - Influencer</td><td>₺19.740,07</td><td>382.174</td><td>1.407</td></tr><tr><td>Google - P-Sales</td><td>₺97.801,38</td><td>355.634</td><td>12.604</td></tr><tr style="font-weight:700;"><td>Toplam</td><td>₺230.494,64</td><td>4.335.358</td><td>64.498</td></tr></tbody></table>
+            </div>
+        </div>
+
+        <div class="center-wrapper" id="devam-projesi"><h2 class="section-title">Devam Projesi - Teklif</h2></div>
+        <section class="teklif-section">
+            <a href="https://github.com/nesibekeles/dugun.com/raw/main/Altinyildiz%20Classics%20X%20Dugun.com_Teklif_Ekim25.pdf" download="Altinyildiz Classics X Dugun.com Teklif.pdf">
+                <img src="https://github.com/nesibekeles/dugun.com/blob/main/Teklif_preview.png?raw=true" alt="Devam Projesi Teklif Önizlemesi">
+            </a>
+        </section>
+        <footer class="footer"><p>Altınyıldız Classics & Düğün.com İş Birliği Raporu | Ekim 2025</p></footer>
+    </div>
+
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Hamburger Menu
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+            // Close menu on link click
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                });
+            });
+
+            // Accordion Logic
+            const accordionItems = document.querySelectorAll('.accordion-item');
+            accordionItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    const content = item.nextElementSibling;
+                    const wasActive = item.classList.contains('active');
+                    // Close all accordions first
+                    accordionItems.forEach(el => {
+                        el.classList.remove('active');
+                        el.nextElementSibling.style.maxHeight = null;
+                        el.nextElementSibling.style.padding = '0 20px';
+                    });
+                    // If it wasn't active, open it
+                    if (!wasActive) {
+                        item.classList.add('active');
+                        content.style.maxHeight = content.scrollHeight + 30 + 'px';
+                        content.style.padding = '15px 20px';
+                    }
+                });
+            });
+
+            // Lightbox Logic
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const images = document.querySelectorAll('.popup-img');
+            const closeBtn = document.querySelector('.lightbox-close');
+            images.forEach(img => {
+                img.addEventListener('click', () => {
+                    lightbox.style.display = 'flex';
+                    lightboxImg.src = img.src;
+                });
+            });
+            const closeLightbox = () => { lightbox.style.display = 'none'; }
+            closeBtn.addEventListener('click', closeLightbox);
+            lightbox.addEventListener('click', (e) => { if (e.target === lightbox) { closeLightbox(); } });
+        });
+    </script>
+</body>
+</html>
